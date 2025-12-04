@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Time Tracker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>⏱️ Screen Time</h1>
+        <p>Your browsing activity</p>
+      </div>
+
+      <div class="time-selector">
+        <button class="active" data-range="today">Today</button>
+        <button data-range="week">Week</button>
+        <button data-range="month">Month</button>
+      </div>
+
+      <div id="content">
+        <div class="loading">
+          <div class="spinner"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
